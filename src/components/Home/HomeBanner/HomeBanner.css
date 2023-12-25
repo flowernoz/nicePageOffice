@@ -1,0 +1,284 @@
+.HomeBanner {
+  width: 100%;
+  height: 792px;
+  background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url("https://images01.nicepage.com/0f/f3/0ff3a7aa2a5f1eb3e2adec00e816cc08.jpeg")
+      60% 90% no-repeat;
+  display: flex;
+  align-items: end;
+  padding-left: 5%;
+}
+
+.HomeBannerText {
+  width: 620px;
+  height: 445px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: var(--backgroundDark);
+  color: var(--colorWhite);
+}
+
+.HomeBannerText h1 {
+  font-size: 80px;
+  font-family: var(--titleFont);
+}
+.HomeBannerText h1::before {
+  content: "";
+  display: inline-block;
+  width: 90px;
+  height: 12px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 0;
+  transform: translate(-70%, -350%);
+}
+
+.HomeBannerText p {
+  font-size: 16px;
+  font-family: var(--textFont);
+  line-height: 170%;
+}
+
+.HomeBannerPosition {
+  position: relative;
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(210%);
+}
+
+.HomeBannerPositionImg {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 378px;
+  height: 400px;
+}
+.HomeBannerPositionImg::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 85%;
+  background: #292f33db;
+  position: absolute;
+  transform: translate(-90%, -15%);
+  z-index: -1;
+}
+.HomeBannerPositionImg img {
+  width: 100%;
+  height: 100%;
+}
+.tenIdeas {
+  width: 139px;
+  height: 139px;
+  background: var(--backgroundDark);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  transform: translateX(-31%);
+  z-index: 5;
+}
+
+.tenIdeas b,
+.tenIdeas span {
+  color: #ffffff;
+  font-family: var(--textFont);
+}
+.tenIdeas b {
+  font-size: 60px;
+  font-family: var(--titleFont);
+}
+.tenIdeas span {
+  font-size: 16px;
+  font-family: var(--textFont);
+  font-style: italic;
+}
+.HomeBannerPosition p {
+  width: 418px;
+  font-size: 16px;
+  font-family: var(--textFont);
+  font-style: italic;
+  color: var(--colorDark);
+  font-weight: 500;
+  line-height: 170%;
+  margin-top: 40px;
+  transform: translateX(-5%);
+}
+.workplaces {
+  display: flex;
+  flex-direction: column;
+  width: 628px;
+  margin-left: 5%;
+  transform: translateY(-330px);
+  gap: 22px;
+}
+
+.workplaces h2.background {
+  padding: 15px 0 0 15px;
+  background: linear-gradient(to right, #e0e7ec 15%, white 0%);
+}
+
+.workplaces span {
+  color: var(--colorDark4);
+  font-size: 16px;
+  font-family: var(--textFont);
+  padding: 0 15px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.learnMore {
+  width: 148px;
+  height: 43px;
+  margin-left: 15px;
+  font-family: var(--textFont);
+  font-size: 16px;
+  background-color: #b8c6d0;
+}
+
+.learnMore:hover {
+  background-color: var(--buttonGrey);
+}
+
+@media (max-width: 870px) {
+  .HomeBanner {
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .HomeBannerText {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .HomeBannerPosition {
+    width: 300px;
+    position: static;
+    transform: translateX(260%);
+  }
+
+  .HomeBannerPositionImg {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 350px;
+  }
+  .HomeBannerPosition p {
+    width: 300px;
+    font-size: 16px;
+    font-family: var(--textFont);
+    font-style: italic;
+    color: var(--colorDark);
+    font-weight: 500;
+    line-height: 170%;
+    margin-top: 40px;
+    transform: translateX(-5%);
+  }
+}
+@media (max-width: 1160px) {
+  .HomeBannerPosition {
+    position: static;
+    transform: translateX(240%);
+  }
+  .workplaces {
+    width: 50%;
+  }
+}
+@media (max-width: 1100px) {
+  .HomeBanner {
+    align-items: center;
+  }
+
+  .HomeBannerPosition {
+    transform: translateX(220%);
+  }
+}
+@media (max-width: 1050px) {
+  .HomeBannerPosition {
+    transform: translateX(210%);
+  }
+}
+@media (max-width: 1000px) {
+  .HomeBannerText {
+    width: 70%;
+    height: 400px;
+  }
+  .HomeBannerText h1::before {
+    display: none;
+  }
+  .HomeBannerPosition {
+    transform: translateX(190%);
+    margin-top: 50px;
+  }
+}
+@media (max-width: 950px) {
+  .HomeBannerPosition {
+    transform: translateX(150%);
+    margin-top: 70px;
+  }
+  .workplaces {
+    width: 80%;
+    margin-top: 150px;
+  }
+  .HomeBannerPosition p {
+    transform: translate(-125%, -200%);
+    font-size: 22px;
+  }
+  .Sidebar {
+    width: 40%;
+  }
+}
+@media (max-width: 850px) {
+  .HomeBannerPosition {
+    transform: translateX(120%);
+    margin-top: 70px;
+  }
+  .HomeBannerPosition p {
+    transform: translate(-105%, -200%);
+  }
+  .HomeBannerText h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 730px) {
+  .HomeBannerPosition {
+    display: none;
+  }
+  .workplaces {
+    width: 80%;
+    margin-top: 360px;
+  }
+  .HomeBannerText {
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+   .Sidebar {
+    width: 100%;
+    align-items: start;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 470px) {
+  .HomeBannerText h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .HomeBannerText {
+    height: 60%;
+  }
+
+}
+@media (max-width: 370px) {
+  .HomeBannerText h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+}

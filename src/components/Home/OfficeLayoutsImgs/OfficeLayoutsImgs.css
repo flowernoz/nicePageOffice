@@ -1,0 +1,47 @@
+.OfficeLayoutsImgs {
+  width: 100%;
+  height:auto ;
+  flex: 1;
+  margin-top: 80px;
+}
+
+.OfficeLayoutsImgs img {
+  flex-grow: 1;
+  width: 316px;
+  height: 364px;
+}
+
+@media (max-width: 1278px) {
+  .OfficeLayoutsImgs {
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+}
+@media (max-width: 940px) {
+  .OfficeLayoutsImgs {
+    margin-top: 0;
+    height: auto;
+  }
+}
+@media (max-width: 850px) {
+
+  .OfficeLayoutsImgs{
+    margin-top: -15%;
+  }
+}
+@media (max-width: 470px) {
+  .OfficeLayoutsImgs img {
+    width: 100%;
+    height: 300px;
+  }
+  .OfficeLayoutsImgs{
+    margin-top: -30%;
+  }
+}
+@media (max-width: 350px) {
+  .OfficeLayoutsImgs{
+    margin-top: -40%;
+  }
+}

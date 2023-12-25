@@ -1,0 +1,116 @@
+.EfficientLayouts {
+  height: 492px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5% 5% 0 5%;
+  background: var(--backgroundDark);
+  transform: translateY(-185px);
+}
+
+.greyDecor {
+  width: 168px;
+  height: 475px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.227);
+}
+
+.EfficientLayouts img {
+  width: 40%;
+  height: 475px;
+  position: absolute;
+  transform: translate(70px, 50px);
+}
+
+.EfficientLayoutsText {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.EfficientLayoutsText h2 {
+  margin-bottom: 30px;
+  color: white;
+  padding: 20px 0px 0px 15px;
+  background: linear-gradient(to right, #e0e7ec2d 21%, transparent 0%);
+}
+
+.EfficientLayoutsText span {
+  padding-left: 20px;
+  color: white;
+  line-height: 170%;
+  margin-bottom: 20px;
+}
+
+.EfficientLayoutsText button {
+  margin-left: 20px;
+  width: 148px;
+  height: 43px;
+  color: var(--colorText);
+  background: var(--colorOrange);
+  font-size: 16px;
+  font-family: var(--textFont);
+}
+.EfficientLayoutsText button:hover {
+  background: #e8ac70;
+}
+
+.EfficientLayoutsText img {
+  position: absolute;
+  width: 429px;
+  height: 263px;
+  top: 84%;
+  right: 20%;
+}
+
+@media (max-width: 1000px) {
+  .EfficientLayoutsText img {
+    display: none;
+  }
+
+  .EfficientLayouts {
+    height: auto;
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 860px) {
+  .EfficientLayouts {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .EfficientLayouts img {
+    width: 300px;
+    margin-right: 25px;
+    height: 350px;
+    position: static;
+    transform: none;
+  }
+
+  .greyDecor {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .EfficientLayouts {
+    justify-content: center;
+  }
+  .EfficientLayouts img {
+    width: 75%;
+    margin-top: 25px;
+  }
+  .EfficientLayoutsText {
+    width: 81%;
+  }
+}
+@media (max-width: 760px) {
+  .EfficientLayouts img {
+    width: 75%;
+    height: 280px;
+    margin-top: 25px;
+  }
+  .EfficientLayoutsText h2{
+    font-size: 30px;
+  }
+}

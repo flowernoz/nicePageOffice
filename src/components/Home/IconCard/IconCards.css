@@ -1,0 +1,45 @@
+.IconCards {
+  max-width: 1250px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 6%;
+  transform: translateY(-200px);
+}
+
+.CardIconItem {
+  width: 165px;
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  align-items: center;
+  gap: 15px;
+}
+
+.CardIconItem svg {
+  color: var(--colorOrange);
+  font-size: 60px;
+}
+
+.CardIconItem p {
+  font-size: 18px;
+  font-weight: 610;
+  font-family: var(--textFont);
+  letter-spacing: 15%;
+  text-transform: uppercase;
+  color: var(--colorDark);
+}
+
+@media (max-width: 1150px) {
+  .CardIconItem {
+    width: 250px;
+  }
+  .IconCards {
+    height: auto;
+  }
+}
+
